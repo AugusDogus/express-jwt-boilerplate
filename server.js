@@ -11,7 +11,7 @@ const pkg = require('./package');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/api', api);
-app.get('/api/healthcheck', function(req, res){
+app.get('/healthcheck', function(req, res){
     res.json({
         "name": pkg.name,
         "version": pkg.version,
