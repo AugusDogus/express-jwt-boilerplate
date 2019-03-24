@@ -6,7 +6,7 @@ Express Mongo JWT Boilerplate
 `MongoDB` - [MongoDB](https://www.mongodb.com) is a document database with the scalability and flexibility that you want with the querying and indexing that you need
 
 #### Setup
-    git clone 
+    git clone git@github.com:AugusDogus/express-jwt-boilerplate.git
     cd ./jwt-boilerplate
     npm i
 Use `example.env.json` as a base to make `env.json`
