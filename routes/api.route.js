@@ -5,15 +5,6 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user.model');
-const pkg = require('./../package');
-
-router.get('/api/status', function(req, res){
-    res.json({
-        "name": pkg.name,
-        "version": pkg.version,
-        "status": "success"
-    });
-});
 
 router.post('/register', function(req, res) {
     console.log(req.body);
