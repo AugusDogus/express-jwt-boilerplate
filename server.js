@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 app.use('/api', api);
 
 //mongoose config
-mongoose.connect(env.mongo_url, { useNewUrlParser: true });
+mongoose.connect((env.mongo_url || process.env.mongu_url), { useNewUrlParser: true });
 
 app.listen(env.port, function(){
-    console.log('Server is running on Port',env.port);
+    console.log('Server is running on Port',(process.env.port || env.port));
 });
