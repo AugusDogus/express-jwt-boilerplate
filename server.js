@@ -6,8 +6,10 @@ const api = require('./routes/api.route');
 const env = require('./environments/env');
 const mongoose = require('mongoose');
 const pkg = require('./package');
+const cors = require('cors');
 
 //express config
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/api', api);
